@@ -50,8 +50,8 @@ public class AuthApiActivator extends BaseActivator {
         new AuthApiRunner(authenticationService.get(), metric.get(), httpTagProvider.get());
     try {
       runner.start();
-    } catch (Exception e) {
-      log.error("Starting AuthApiRunner Failed", e);
+    } catch (Exception a) {
+      log.error("Starting AuthApiRunner Failed", a);
     }
 
     return null;
